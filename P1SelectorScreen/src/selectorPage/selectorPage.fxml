@@ -11,12 +11,12 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="selectorPage.SelectorController">
    <center>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <ListView fx:id="ExpertList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+         <ListView fx:id="expertList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onEditStart="#displayList" prefHeight="200.0" prefWidth="200.0">
             <HBox.margin>
                <Insets left="100.0" />
             </HBox.margin>
          </ListView>
-         <Button fx:id="ConnectButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#connectToExpert" prefHeight="35.0" prefWidth="115.0" text="Connect to Expert">
+         <Button fx:id="connectButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#connectToExpert" prefHeight="35.0" prefWidth="115.0" text="Connect to Expert">
             <HBox.margin>
                <Insets left="75.0" />
             </HBox.margin>
@@ -28,7 +28,7 @@
    </center>
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <TextField fx:id="SearchBar" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="350.0" promptText="Please enter subject e.g. Programming, Cooking...">
+         <TextField fx:id="searchBar" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="350.0" promptText="Please enter subject e.g. Programming, Cooking...">
             <HBox.margin>
                <Insets left="50.0" top="30.0" />
             </HBox.margin>
